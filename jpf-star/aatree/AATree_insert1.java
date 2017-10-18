@@ -16,13 +16,60 @@ public class AATree_insert1 extends TestJPF {
 		int d_4 = 0;
 		int x = 0;
 		int a_1 = 0;
-		obj.deletedNode = null;
 		obj.lastNode = null;
+		obj.deletedNode = null;
 		obj.insert(x);
 	}
 
 	@Test
 	public void test_insert2() throws Exception {
+		AATree obj = new AATree();
+		obj.root = new AANode();
+		AANode b_2 = obj.nullNode;
+		AANode c_3 = obj.nullNode;
+		AANode left_6 = obj.nullNode;
+		AANode right_7 = obj.nullNode;
+		int element_5 = 1;
+		int level_8 = 1;
+		int d_4 = 0;
+		int x = 0;
+		int a_1 = 0;
+		obj.lastNode = null;
+		obj.deletedNode = null;
+		obj.root.element = element_5;
+		obj.root.left = left_6;
+		obj.root.right = right_7;
+		obj.root.level = level_8;
+		obj.insert(x);
+	}
+
+	@Test
+	public void test_insert3() throws Exception {
+		AATree obj = new AATree();
+		obj.root = new AANode();
+		AANode b_2 = obj.nullNode;
+		AANode c_3 = obj.nullNode;
+		AANode this_nullNode_319 = obj.nullNode;
+		AANode left_6 = obj.nullNode;
+		AANode right_7 = this_nullNode_319;
+		int level_8 = 1;
+		int d_4 = 0;
+		int element_317 = 0;
+		int a_1 = 0;
+		int element_5 = 0;
+		int element_316 = 0;
+		int x = 0;
+		obj.lastNode = null;
+		obj.deletedNode = null;
+		obj.root.element = element_5;
+		obj.root.left = left_6;
+		obj.root.right = right_7;
+		obj.root.level = level_8;
+		obj.insert(x);
+	}
+
+	@Test
+	public void test_insert4() throws Exception {
 		AATree obj = new AATree();
 		obj.root = new AANode();
 		AANode right_7 = new AANode();
@@ -42,8 +89,8 @@ public class AATree_insert1 extends TestJPF {
 		int element_318 = 0;
 		int x = -2;
 		int element_319 = 0;
-		obj.deletedNode = null;
 		obj.lastNode = null;
+		obj.deletedNode = null;
 		obj.root.element = element_5;
 		obj.root.left = left_6;
 		obj.root.right = right_7;
@@ -56,7 +103,7 @@ public class AATree_insert1 extends TestJPF {
 	}
 
 	@Test
-	public void test_insert3() throws Exception {
+	public void test_insert5() throws Exception {
 		AATree obj = new AATree();
 		obj.root = new AANode();
 		AANode right_7 = new AANode();
@@ -75,8 +122,8 @@ public class AATree_insert1 extends TestJPF {
 		int element_5 = 0;
 		int element_316 = 0;
 		int x = 0;
-		obj.deletedNode = null;
 		obj.lastNode = null;
+		obj.deletedNode = null;
 		obj.root.element = element_5;
 		obj.root.left = left_6;
 		obj.root.right = right_7;
@@ -89,29 +136,7 @@ public class AATree_insert1 extends TestJPF {
 	}
 
 	@Test
-	public void test_insert4() throws Exception {
-		AATree obj = new AATree();
-		obj.root = new AANode();
-		AANode b_2 = obj.nullNode;
-		AANode c_3 = obj.nullNode;
-		AANode left_6 = obj.nullNode;
-		AANode right_7 = obj.nullNode;
-		int element_5 = 1;
-		int level_8 = 1;
-		int d_4 = 0;
-		int x = 0;
-		int a_1 = 0;
-		obj.deletedNode = null;
-		obj.lastNode = null;
-		obj.root.element = element_5;
-		obj.root.left = left_6;
-		obj.root.right = right_7;
-		obj.root.level = level_8;
-		obj.insert(x);
-	}
-
-	@Test
-	public void test_insert5() throws Exception {
+	public void test_insert6() throws Exception {
 		AATree obj = new AATree();
 		obj.root = new AANode();
 		AANode b_2 = obj.nullNode;
@@ -123,33 +148,8 @@ public class AATree_insert1 extends TestJPF {
 		int d_4 = 0;
 		int x = 0;
 		int a_1 = 0;
-		obj.deletedNode = null;
 		obj.lastNode = null;
-		obj.root.element = element_5;
-		obj.root.left = left_6;
-		obj.root.right = right_7;
-		obj.root.level = level_8;
-		obj.insert(x);
-	}
-
-	@Test
-	public void test_insert6() throws Exception {
-		AATree obj = new AATree();
-		obj.root = new AANode();
-		AANode b_2 = obj.nullNode;
-		AANode c_3 = obj.nullNode;
-		AANode this_nullNode_319 = obj.nullNode;
-		AANode left_6 = obj.nullNode;
-		AANode right_7 = this_nullNode_319;
-		int level_8 = 1;
-		int d_4 = 0;
-		int element_317 = 0;
-		int a_1 = 0;
-		int element_5 = 0;
-		int element_316 = 0;
-		int x = 0;
 		obj.deletedNode = null;
-		obj.lastNode = null;
 		obj.root.element = element_5;
 		obj.root.left = left_6;
 		obj.root.right = right_7;

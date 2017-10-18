@@ -9,12 +9,37 @@ public class AvlTree_isEmpty1 extends TestJPF {
 	@Test
 	public void test_isEmpty1() throws Exception {
 		AvlTree obj = new AvlTree();
-		obj.root = null;
+		obj.root = new AvlNode();
+		AvlNode right_3 = new AvlNode();
+		AvlNode left_2 = null;
+		AvlNode left_265 = null;
+		AvlNode right_264 = null;
+		int height_4 = 1;
+		int element_1 = -1;
+		int heightR_8 = 0;
+		int element_263 = 0;
+		int element_223 = -1;
+		int element_224 = -1;
+		obj.root.element = element_1;
+		obj.root.left = left_2;
+		obj.root.right = right_3;
+		obj.root.height = height_4;
+		right_3.element = element_263;
+		right_3.left = left_265;
+		right_3.right = right_264;
+		right_3.height = heightR_8;
 		obj.isEmpty();
 	}
 
 	@Test
 	public void test_isEmpty2() throws Exception {
+		AvlTree obj = new AvlTree();
+		obj.root = null;
+		obj.isEmpty();
+	}
+
+	@Test
+	public void test_isEmpty3() throws Exception {
 		AvlTree obj = new AvlTree();
 		obj.root = new AvlNode();
 		AvlNode left_2 = null;
@@ -31,7 +56,7 @@ public class AvlTree_isEmpty1 extends TestJPF {
 	}
 
 	@Test
-	public void test_isEmpty3() throws Exception {
+	public void test_isEmpty4() throws Exception {
 		AvlTree obj = new AvlTree();
 		obj.root = new AvlNode();
 		AvlNode left_2 = new AvlNode();
@@ -52,31 +77,6 @@ public class AvlTree_isEmpty1 extends TestJPF {
 		left_2.left = left_251;
 		left_2.right = right_250;
 		left_2.height = heightL_6;
-		obj.isEmpty();
-	}
-
-	@Test
-	public void test_isEmpty4() throws Exception {
-		AvlTree obj = new AvlTree();
-		obj.root = new AvlNode();
-		AvlNode right_3 = new AvlNode();
-		AvlNode left_2 = null;
-		AvlNode left_265 = null;
-		AvlNode right_264 = null;
-		int height_4 = 1;
-		int element_1 = -1;
-		int heightR_8 = 0;
-		int element_263 = 0;
-		int element_223 = -1;
-		int element_224 = -1;
-		obj.root.element = element_1;
-		obj.root.left = left_2;
-		obj.root.right = right_3;
-		obj.root.height = height_4;
-		right_3.element = element_263;
-		right_3.left = left_265;
-		right_3.right = right_264;
-		right_3.height = heightR_8;
 		obj.isEmpty();
 	}
 

@@ -16,10 +16,10 @@ public class DoubleLinkedList_set1 extends TestJPF {
 		Entry this_header_112 = obj.header;
 		obj.size = 1;
 		int index = 0;
-		Object element = null;
-		obj.modCount = 0;
 		Object ele_3 = null;
 		Object ele_6 = null;
+		obj.modCount = 0;
+		Object element = null;
 		obj.header.element = ele_3;
 		obj.header.next = next_4;
 		obj.header.previous = prev_5;
@@ -41,11 +41,11 @@ public class DoubleLinkedList_set1 extends TestJPF {
 		obj.size = 2;
 		int index = 0;
 		Entry prev_5 = prev_114;
-		Object element = null;
-		obj.modCount = 0;
 		Object ele_3 = null;
 		Object ele_6 = null;
 		Object ele_142 = null;
+		obj.modCount = 0;
+		Object element = null;
 		obj.header.element = ele_3;
 		obj.header.next = next_4;
 		obj.header.previous = prev_5;

@@ -10,19 +10,6 @@ public class AATree_isEmpty1 extends TestJPF {
 	@Test
 	public void test_isEmpty1() throws Exception {
 		AATree obj = new AATree();
-		obj.root = obj.nullNode;
-		AANode b_2 = obj.nullNode;
-		AANode c_3 = obj.nullNode;
-		int d_4 = 0;
-		int a_1 = 0;
-		obj.deletedNode = null;
-		obj.lastNode = null;
-		obj.isEmpty();
-	}
-
-	@Test
-	public void test_isEmpty2() throws Exception {
-		AATree obj = new AATree();
 		obj.root = new AANode();
 		AANode right_7 = new AANode();
 		AANode b_2 = obj.nullNode;
@@ -39,8 +26,8 @@ public class AATree_isEmpty1 extends TestJPF {
 		int element_5 = -1;
 		int element_368 = 0;
 		int element_316 = -1;
-		obj.deletedNode = null;
 		obj.lastNode = null;
+		obj.deletedNode = null;
 		obj.root.element = element_5;
 		obj.root.left = left_6;
 		obj.root.right = right_7;
@@ -49,6 +36,19 @@ public class AATree_isEmpty1 extends TestJPF {
 		right_7.left = left_370;
 		right_7.right = right_369;
 		right_7.level = level_318;
+		obj.isEmpty();
+	}
+
+	@Test
+	public void test_isEmpty2() throws Exception {
+		AATree obj = new AATree();
+		obj.root = obj.nullNode;
+		AANode b_2 = obj.nullNode;
+		AANode c_3 = obj.nullNode;
+		int d_4 = 0;
+		int a_1 = 0;
+		obj.lastNode = null;
+		obj.deletedNode = null;
 		obj.isEmpty();
 	}
 
@@ -67,8 +67,8 @@ public class AATree_isEmpty1 extends TestJPF {
 		int a_1 = 0;
 		int element_5 = 5;
 		int element_316 = 5;
-		obj.deletedNode = null;
 		obj.lastNode = null;
+		obj.deletedNode = null;
 		obj.root.element = element_5;
 		obj.root.left = left_6;
 		obj.root.right = right_7;

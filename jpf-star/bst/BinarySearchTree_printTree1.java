@@ -9,13 +9,6 @@ public class BinarySearchTree_printTree1 extends TestJPF {
 	@Test
 	public void test_printTree1() throws Exception {
 		BinarySearchTree obj = new BinarySearchTree();
-		obj.root = null;
-		obj.printTree();
-	}
-
-	@Test
-	public void test_printTree2() throws Exception {
-		BinarySearchTree obj = new BinarySearchTree();
 		obj.root = new BinaryNode();
 		BinaryNode left_2 = null;
 		BinaryNode right_3 = null;
@@ -23,6 +16,13 @@ public class BinarySearchTree_printTree1 extends TestJPF {
 		obj.root.element = element_1;
 		obj.root.left = left_2;
 		obj.root.right = right_3;
+		obj.printTree();
+	}
+
+	@Test
+	public void test_printTree2() throws Exception {
+		BinarySearchTree obj = new BinarySearchTree();
+		obj.root = null;
 		obj.printTree();
 	}
 

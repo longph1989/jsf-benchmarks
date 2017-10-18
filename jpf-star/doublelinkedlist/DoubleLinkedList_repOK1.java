@@ -10,9 +10,21 @@ public class DoubleLinkedList_repOK1 extends TestJPF {
 	@Test
 	public void test_repOK1() throws Exception {
 		DoubleLinkedList obj = new DoubleLinkedList();
-		obj.header = null;
+		obj.header = new Entry();
+		Entry next_2 = new Entry();
+		Entry previous_3 = obj.header;
+		Entry previous_9 = null;
+		Entry next_8 = null;
+		Object element_7 = null;
 		obj.modCount = 0;
+		Object element_1 = null;
 		obj.size = 0;
+		obj.header.element = element_1;
+		obj.header.next = next_2;
+		obj.header.previous = previous_3;
+		next_2.element = element_7;
+		next_2.next = next_8;
+		next_2.previous = previous_9;
 		obj.repOK();
 	}
 
@@ -20,19 +32,58 @@ public class DoubleLinkedList_repOK1 extends TestJPF {
 	public void test_repOK2() throws Exception {
 		DoubleLinkedList obj = new DoubleLinkedList();
 		obj.header = new Entry();
-		Entry next_2 = obj.header;
-		Entry previous_3 = obj.header;
-		obj.size = 0;
+		Entry next_2 = new Entry();
+		Entry previous_3 = new Entry();
+		Entry previous_9 = obj.header;
+		Entry next_8 = next_2;
+		Object element_7 = null;
+		Entry next_29 = null;
+		Entry previous_30 = null;
 		obj.modCount = 0;
 		Object element_1 = null;
+		obj.size = 0;
+		Object element_28 = null;
 		obj.header.element = element_1;
 		obj.header.next = next_2;
 		obj.header.previous = previous_3;
+		next_2.element = element_7;
+		next_2.next = next_8;
+		next_2.previous = previous_9;
+		previous_3.element = element_28;
+		previous_3.next = next_29;
+		previous_3.previous = previous_30;
 		obj.repOK();
 	}
 
 	@Test
 	public void test_repOK3() throws Exception {
+		DoubleLinkedList obj = new DoubleLinkedList();
+		obj.header = new Entry();
+		Entry next_2 = new Entry();
+		Entry previous_3 = new Entry();
+		Entry previous_9 = next_2;
+		Object element_7 = null;
+		Entry next_29 = null;
+		Entry previous_30 = null;
+		Entry next_8 = null;
+		obj.modCount = 0;
+		Object element_1 = null;
+		obj.size = 0;
+		Object element_28 = null;
+		obj.header.element = element_1;
+		obj.header.next = next_2;
+		obj.header.previous = previous_3;
+		next_2.element = element_7;
+		next_2.next = next_8;
+		next_2.previous = previous_9;
+		previous_3.element = element_28;
+		previous_3.next = next_29;
+		previous_3.previous = previous_30;
+		obj.repOK();
+	}
+
+	@Test
+	public void test_repOK4() throws Exception {
 		DoubleLinkedList obj = new DoubleLinkedList();
 		obj.header = new Entry();
 		Entry next_2 = obj.header;
@@ -47,31 +98,37 @@ public class DoubleLinkedList_repOK1 extends TestJPF {
 	}
 
 	@Test
-	public void test_repOK4() throws Exception {
+	public void test_repOK5() throws Exception {
 		DoubleLinkedList obj = new DoubleLinkedList();
 		obj.header = new Entry();
-		Entry next_2 = obj.header;
-		Entry previous_3 = null;
+		Entry next_2 = new Entry();
+		Entry previous_3 = next_2;
+		Entry previous_9 = obj.header;
+		Entry next_8 = next_2;
+		Object element_7 = null;
 		obj.modCount = 0;
-		obj.size = 0;
 		Object element_1 = null;
+		obj.size = 0;
 		obj.header.element = element_1;
 		obj.header.next = next_2;
 		obj.header.previous = previous_3;
+		next_2.element = element_7;
+		next_2.next = next_8;
+		next_2.previous = previous_9;
 		obj.repOK();
 	}
 
 	@Test
-	public void test_repOK5() throws Exception {
+	public void test_repOK6() throws Exception {
 		DoubleLinkedList obj = new DoubleLinkedList();
 		obj.header = new Entry();
 		Entry previous_3 = new Entry();
 		Entry next_2 = obj.header;
-		obj.modCount = 0;
-		obj.size = 0;
-		Object element_1 = null;
-		Object element_4 = null;
 		Entry next_5 = null;
+		Object element_4 = null;
+		obj.modCount = 0;
+		Object element_1 = null;
+		obj.size = 0;
 		Entry previous_6 = null;
 		obj.header.element = element_1;
 		obj.header.next = next_2;
@@ -83,38 +140,29 @@ public class DoubleLinkedList_repOK1 extends TestJPF {
 	}
 
 	@Test
-	public void test_repOK6() throws Exception {
-		DoubleLinkedList obj = new DoubleLinkedList();
-		obj.header = new Entry();
-		Entry next_2 = null;
-		obj.modCount = 0;
-		obj.size = 0;
-		Object element_1 = null;
-		Entry previous_3 = null;
-		obj.header.element = element_1;
-		obj.header.next = next_2;
-		obj.header.previous = previous_3;
-		obj.repOK();
-	}
-
-	@Test
 	public void test_repOK7() throws Exception {
 		DoubleLinkedList obj = new DoubleLinkedList();
 		obj.header = new Entry();
 		Entry next_2 = new Entry();
+		Entry previous_9 = new Entry();
 		Entry previous_3 = obj.header;
-		Entry previous_9 = obj.header;
-		Entry next_8 = obj.header;
-		obj.modCount = 0;
-		obj.size = 0;
-		Object element_1 = null;
 		Object element_7 = null;
+		Entry previous_18 = null;
+		Entry next_17 = null;
+		Entry next_8 = null;
+		obj.modCount = 0;
+		Object element_1 = null;
+		obj.size = 0;
+		Object element_16 = null;
 		obj.header.element = element_1;
 		obj.header.next = next_2;
 		obj.header.previous = previous_3;
 		next_2.element = element_7;
 		next_2.next = next_8;
 		next_2.previous = previous_9;
+		previous_9.element = element_16;
+		previous_9.next = next_17;
+		previous_9.previous = previous_18;
 		obj.repOK();
 	}
 
@@ -123,13 +171,13 @@ public class DoubleLinkedList_repOK1 extends TestJPF {
 		DoubleLinkedList obj = new DoubleLinkedList();
 		obj.header = new Entry();
 		Entry next_2 = new Entry();
-		Entry previous_3 = obj.header;
-		Entry previous_9 = obj.header;
-		Entry next_8 = next_2;
-		obj.modCount = 0;
-		obj.size = 0;
-		Object element_1 = null;
+		Entry previous_3 = null;
+		Entry next_8 = null;
+		Entry previous_9 = null;
 		Object element_7 = null;
+		obj.modCount = 0;
+		Object element_1 = null;
+		obj.size = 0;
 		obj.header.element = element_1;
 		obj.header.next = next_2;
 		obj.header.previous = previous_3;
@@ -144,13 +192,13 @@ public class DoubleLinkedList_repOK1 extends TestJPF {
 		DoubleLinkedList obj = new DoubleLinkedList();
 		obj.header = new Entry();
 		Entry next_2 = new Entry();
-		Entry previous_3 = obj.header;
-		Entry previous_9 = obj.header;
+		Entry previous_3 = next_2;
+		Entry previous_9 = null;
 		Entry next_8 = null;
-		obj.modCount = 0;
-		obj.size = 0;
-		Object element_1 = null;
 		Object element_7 = null;
+		obj.modCount = 0;
+		Object element_1 = null;
+		obj.size = 0;
 		obj.header.element = element_1;
 		obj.header.next = next_2;
 		obj.header.previous = previous_3;
@@ -165,13 +213,13 @@ public class DoubleLinkedList_repOK1 extends TestJPF {
 		DoubleLinkedList obj = new DoubleLinkedList();
 		obj.header = new Entry();
 		Entry next_2 = new Entry();
-		Entry previous_3 = obj.header;
-		Entry previous_9 = next_2;
-		obj.modCount = 0;
-		obj.size = 0;
-		Object element_1 = null;
+		Entry previous_3 = next_2;
+		Entry previous_9 = obj.header;
+		Entry next_8 = obj.header;
+		obj.size = 3;
 		Object element_7 = null;
-		Entry next_8 = null;
+		obj.modCount = 0;
+		Object element_1 = null;
 		obj.header.element = element_1;
 		obj.header.next = next_2;
 		obj.header.previous = previous_3;
@@ -186,19 +234,25 @@ public class DoubleLinkedList_repOK1 extends TestJPF {
 		DoubleLinkedList obj = new DoubleLinkedList();
 		obj.header = new Entry();
 		Entry next_2 = new Entry();
-		Entry previous_3 = obj.header;
+		Entry previous_3 = new Entry();
 		Entry previous_9 = null;
-		obj.modCount = 0;
-		obj.size = 0;
-		Object element_1 = null;
 		Object element_7 = null;
+		Entry next_29 = null;
+		Entry previous_30 = null;
 		Entry next_8 = null;
+		obj.modCount = 0;
+		Object element_1 = null;
+		obj.size = 0;
+		Object element_28 = null;
 		obj.header.element = element_1;
 		obj.header.next = next_2;
 		obj.header.previous = previous_3;
 		next_2.element = element_7;
 		next_2.next = next_8;
 		next_2.previous = previous_9;
+		previous_3.element = element_28;
+		previous_3.next = next_29;
+		previous_3.previous = previous_30;
 		obj.repOK();
 	}
 
@@ -207,25 +261,31 @@ public class DoubleLinkedList_repOK1 extends TestJPF {
 		DoubleLinkedList obj = new DoubleLinkedList();
 		obj.header = new Entry();
 		Entry next_2 = new Entry();
+		Entry previous_3 = new Entry();
 		Entry previous_9 = new Entry();
-		Entry previous_3 = obj.header;
-		obj.modCount = 0;
-		obj.size = 0;
-		Object element_1 = null;
 		Object element_7 = null;
+		Entry next_29 = null;
+		Object element_40 = null;
+		Entry previous_42 = null;
+		Entry previous_30 = null;
 		Entry next_8 = null;
-		Object element_16 = null;
-		Entry next_17 = null;
-		Entry previous_18 = null;
+		Entry next_41 = null;
+		obj.modCount = 0;
+		Object element_1 = null;
+		obj.size = 0;
+		Object element_28 = null;
 		obj.header.element = element_1;
 		obj.header.next = next_2;
 		obj.header.previous = previous_3;
 		next_2.element = element_7;
 		next_2.next = next_8;
 		next_2.previous = previous_9;
-		previous_9.element = element_16;
-		previous_9.next = next_17;
-		previous_9.previous = previous_18;
+		previous_3.element = element_28;
+		previous_3.next = next_29;
+		previous_3.previous = previous_30;
+		previous_9.element = element_40;
+		previous_9.next = next_41;
+		previous_9.previous = previous_42;
 		obj.repOK();
 	}
 
@@ -233,20 +293,14 @@ public class DoubleLinkedList_repOK1 extends TestJPF {
 	public void test_repOK13() throws Exception {
 		DoubleLinkedList obj = new DoubleLinkedList();
 		obj.header = new Entry();
-		Entry next_2 = new Entry();
-		Entry previous_3 = next_2;
-		Entry previous_9 = obj.header;
-		Entry next_8 = obj.header;
-		obj.size = 1;
+		Entry next_2 = obj.header;
+		Entry previous_3 = obj.header;
+		obj.size = 0;
 		obj.modCount = 0;
 		Object element_1 = null;
-		Object element_7 = null;
 		obj.header.element = element_1;
 		obj.header.next = next_2;
 		obj.header.previous = previous_3;
-		next_2.element = element_7;
-		next_2.next = next_8;
-		next_2.previous = previous_9;
 		obj.repOK();
 	}
 
@@ -255,13 +309,13 @@ public class DoubleLinkedList_repOK1 extends TestJPF {
 		DoubleLinkedList obj = new DoubleLinkedList();
 		obj.header = new Entry();
 		Entry next_2 = new Entry();
-		Entry previous_3 = next_2;
+		Entry previous_3 = obj.header;
 		Entry previous_9 = obj.header;
-		Entry next_8 = obj.header;
-		obj.size = 3;
+		Entry next_8 = next_2;
+		Object element_7 = null;
 		obj.modCount = 0;
 		Object element_1 = null;
-		Object element_7 = null;
+		obj.size = 0;
 		obj.header.element = element_1;
 		obj.header.next = next_2;
 		obj.header.previous = previous_3;
@@ -275,20 +329,14 @@ public class DoubleLinkedList_repOK1 extends TestJPF {
 	public void test_repOK15() throws Exception {
 		DoubleLinkedList obj = new DoubleLinkedList();
 		obj.header = new Entry();
-		Entry next_2 = new Entry();
-		Entry previous_3 = next_2;
-		Entry previous_9 = obj.header;
-		Entry next_8 = next_2;
+		Entry next_2 = obj.header;
+		Entry previous_3 = null;
 		obj.modCount = 0;
-		obj.size = 0;
 		Object element_1 = null;
-		Object element_7 = null;
+		obj.size = 0;
 		obj.header.element = element_1;
 		obj.header.next = next_2;
 		obj.header.previous = previous_3;
-		next_2.element = element_7;
-		next_2.next = next_8;
-		next_2.previous = previous_9;
 		obj.repOK();
 	}
 
@@ -297,13 +345,13 @@ public class DoubleLinkedList_repOK1 extends TestJPF {
 		DoubleLinkedList obj = new DoubleLinkedList();
 		obj.header = new Entry();
 		Entry next_2 = new Entry();
-		Entry previous_3 = next_2;
+		Entry previous_3 = obj.header;
 		Entry previous_9 = obj.header;
-		Entry next_8 = null;
-		obj.modCount = 0;
-		obj.size = 0;
-		Object element_1 = null;
+		Entry next_8 = obj.header;
 		Object element_7 = null;
+		obj.modCount = 0;
+		Object element_1 = null;
+		obj.size = 0;
 		obj.header.element = element_1;
 		obj.header.next = next_2;
 		obj.header.previous = previous_3;
@@ -318,19 +366,25 @@ public class DoubleLinkedList_repOK1 extends TestJPF {
 		DoubleLinkedList obj = new DoubleLinkedList();
 		obj.header = new Entry();
 		Entry next_2 = new Entry();
-		Entry previous_3 = next_2;
-		Entry previous_9 = next_2;
-		obj.modCount = 0;
-		obj.size = 0;
-		Object element_1 = null;
-		Object element_7 = null;
+		Entry previous_3 = new Entry();
+		Entry previous_9 = obj.header;
 		Entry next_8 = null;
+		Object element_7 = null;
+		Entry next_29 = null;
+		Entry previous_30 = null;
+		obj.modCount = 0;
+		Object element_1 = null;
+		obj.size = 0;
+		Object element_28 = null;
 		obj.header.element = element_1;
 		obj.header.next = next_2;
 		obj.header.previous = previous_3;
 		next_2.element = element_7;
 		next_2.next = next_8;
 		next_2.previous = previous_9;
+		previous_3.element = element_28;
+		previous_3.next = next_29;
+		previous_3.previous = previous_30;
 		obj.repOK();
 	}
 
@@ -340,12 +394,12 @@ public class DoubleLinkedList_repOK1 extends TestJPF {
 		obj.header = new Entry();
 		Entry next_2 = new Entry();
 		Entry previous_3 = next_2;
-		Entry previous_9 = null;
-		obj.modCount = 0;
-		obj.size = 0;
-		Object element_1 = null;
-		Object element_7 = null;
+		Entry previous_9 = next_2;
 		Entry next_8 = null;
+		Object element_7 = null;
+		obj.modCount = 0;
+		Object element_1 = null;
+		obj.size = 0;
 		obj.header.element = element_1;
 		obj.header.next = next_2;
 		obj.header.previous = previous_3;
@@ -360,16 +414,88 @@ public class DoubleLinkedList_repOK1 extends TestJPF {
 		DoubleLinkedList obj = new DoubleLinkedList();
 		obj.header = new Entry();
 		Entry next_2 = new Entry();
-		Entry previous_9 = new Entry();
 		Entry previous_3 = next_2;
+		Entry previous_9 = obj.header;
+		Entry next_8 = null;
+		Object element_7 = null;
+		obj.modCount = 0;
+		Object element_1 = null;
+		obj.size = 0;
+		obj.header.element = element_1;
+		obj.header.next = next_2;
+		obj.header.previous = previous_3;
+		next_2.element = element_7;
+		next_2.next = next_8;
+		next_2.previous = previous_9;
+		obj.repOK();
+	}
+
+	@Test
+	public void test_repOK20() throws Exception {
+		DoubleLinkedList obj = new DoubleLinkedList();
+		obj.header = null;
 		obj.modCount = 0;
 		obj.size = 0;
-		Object element_1 = null;
+		obj.repOK();
+	}
+
+	@Test
+	public void test_repOK21() throws Exception {
+		DoubleLinkedList obj = new DoubleLinkedList();
+		obj.header = new Entry();
+		Entry next_2 = new Entry();
+		Entry previous_3 = obj.header;
+		Entry previous_9 = obj.header;
+		Entry next_8 = null;
 		Object element_7 = null;
+		obj.modCount = 0;
+		Object element_1 = null;
+		obj.size = 0;
+		obj.header.element = element_1;
+		obj.header.next = next_2;
+		obj.header.previous = previous_3;
+		next_2.element = element_7;
+		next_2.next = next_8;
+		next_2.previous = previous_9;
+		obj.repOK();
+	}
+
+	@Test
+	public void test_repOK22() throws Exception {
+		DoubleLinkedList obj = new DoubleLinkedList();
+		obj.header = new Entry();
+		Entry next_2 = new Entry();
+		Entry previous_3 = next_2;
+		Entry previous_9 = obj.header;
+		Entry next_8 = obj.header;
+		obj.size = 1;
+		Object element_7 = null;
+		obj.modCount = 0;
+		Object element_1 = null;
+		obj.header.element = element_1;
+		obj.header.next = next_2;
+		obj.header.previous = previous_3;
+		next_2.element = element_7;
+		next_2.next = next_8;
+		next_2.previous = previous_9;
+		obj.repOK();
+	}
+
+	@Test
+	public void test_repOK23() throws Exception {
+		DoubleLinkedList obj = new DoubleLinkedList();
+		obj.header = new Entry();
+		Entry next_2 = new Entry();
+		Entry previous_9 = new Entry();
+		Entry previous_3 = next_2;
+		Object element_7 = null;
+		Entry previous_27 = null;
+		Entry next_26 = null;
 		Entry next_8 = null;
 		Object element_25 = null;
-		Entry next_26 = null;
-		Entry previous_27 = null;
+		obj.modCount = 0;
+		Object element_1 = null;
+		obj.size = 0;
 		obj.header.element = element_1;
 		obj.header.next = next_2;
 		obj.header.previous = previous_3;
@@ -383,131 +509,23 @@ public class DoubleLinkedList_repOK1 extends TestJPF {
 	}
 
 	@Test
-	public void test_repOK20() throws Exception {
-		DoubleLinkedList obj = new DoubleLinkedList();
-		obj.header = new Entry();
-		Entry next_2 = new Entry();
-		Entry previous_3 = null;
-		obj.modCount = 0;
-		obj.size = 0;
-		Object element_1 = null;
-		Object element_7 = null;
-		Entry next_8 = null;
-		Entry previous_9 = null;
-		obj.header.element = element_1;
-		obj.header.next = next_2;
-		obj.header.previous = previous_3;
-		next_2.element = element_7;
-		next_2.next = next_8;
-		next_2.previous = previous_9;
-		obj.repOK();
-	}
-
-	@Test
-	public void test_repOK21() throws Exception {
-		DoubleLinkedList obj = new DoubleLinkedList();
-		obj.header = new Entry();
-		Entry next_2 = new Entry();
-		Entry previous_3 = new Entry();
-		Entry previous_9 = obj.header;
-		Entry next_8 = obj.header;
-		obj.modCount = 0;
-		obj.size = 0;
-		Object element_1 = null;
-		Object element_7 = null;
-		Object element_28 = null;
-		Entry next_29 = null;
-		Entry previous_30 = null;
-		obj.header.element = element_1;
-		obj.header.next = next_2;
-		obj.header.previous = previous_3;
-		next_2.element = element_7;
-		next_2.next = next_8;
-		next_2.previous = previous_9;
-		previous_3.element = element_28;
-		previous_3.next = next_29;
-		previous_3.previous = previous_30;
-		obj.repOK();
-	}
-
-	@Test
-	public void test_repOK22() throws Exception {
-		DoubleLinkedList obj = new DoubleLinkedList();
-		obj.header = new Entry();
-		Entry next_2 = new Entry();
-		Entry previous_3 = new Entry();
-		Entry previous_9 = obj.header;
-		Entry next_8 = next_2;
-		obj.modCount = 0;
-		obj.size = 0;
-		Object element_1 = null;
-		Object element_7 = null;
-		Object element_28 = null;
-		Entry next_29 = null;
-		Entry previous_30 = null;
-		obj.header.element = element_1;
-		obj.header.next = next_2;
-		obj.header.previous = previous_3;
-		next_2.element = element_7;
-		next_2.next = next_8;
-		next_2.previous = previous_9;
-		previous_3.element = element_28;
-		previous_3.next = next_29;
-		previous_3.previous = previous_30;
-		obj.repOK();
-	}
-
-	@Test
-	public void test_repOK23() throws Exception {
-		DoubleLinkedList obj = new DoubleLinkedList();
-		obj.header = new Entry();
-		Entry next_2 = new Entry();
-		Entry previous_3 = new Entry();
-		Entry previous_9 = obj.header;
-		Entry next_8 = null;
-		obj.modCount = 0;
-		obj.size = 0;
-		Object element_1 = null;
-		Object element_7 = null;
-		Object element_28 = null;
-		Entry next_29 = null;
-		Entry previous_30 = null;
-		obj.header.element = element_1;
-		obj.header.next = next_2;
-		obj.header.previous = previous_3;
-		next_2.element = element_7;
-		next_2.next = next_8;
-		next_2.previous = previous_9;
-		previous_3.element = element_28;
-		previous_3.next = next_29;
-		previous_3.previous = previous_30;
-		obj.repOK();
-	}
-
-	@Test
 	public void test_repOK24() throws Exception {
 		DoubleLinkedList obj = new DoubleLinkedList();
 		obj.header = new Entry();
 		Entry next_2 = new Entry();
-		Entry previous_3 = new Entry();
+		Entry previous_3 = obj.header;
 		Entry previous_9 = next_2;
-		obj.modCount = 0;
-		obj.size = 0;
-		Object element_1 = null;
-		Object element_7 = null;
 		Entry next_8 = null;
-		Object element_28 = null;
-		Entry next_29 = null;
-		Entry previous_30 = null;
+		Object element_7 = null;
+		obj.modCount = 0;
+		Object element_1 = null;
+		obj.size = 0;
 		obj.header.element = element_1;
 		obj.header.next = next_2;
 		obj.header.previous = previous_3;
 		next_2.element = element_7;
 		next_2.next = next_8;
 		next_2.previous = previous_9;
-		previous_3.element = element_28;
-		previous_3.next = next_29;
-		previous_3.previous = previous_30;
 		obj.repOK();
 	}
 
@@ -518,14 +536,14 @@ public class DoubleLinkedList_repOK1 extends TestJPF {
 		Entry next_2 = new Entry();
 		Entry previous_3 = new Entry();
 		Entry previous_9 = previous_3;
-		obj.modCount = 0;
-		obj.size = 0;
-		Object element_1 = null;
 		Object element_7 = null;
-		Entry next_8 = null;
-		Object element_28 = null;
 		Entry next_29 = null;
 		Entry previous_30 = null;
+		Entry next_8 = null;
+		obj.modCount = 0;
+		Object element_1 = null;
+		obj.size = 0;
+		Object element_28 = null;
 		obj.header.element = element_1;
 		obj.header.next = next_2;
 		obj.header.previous = previous_3;
@@ -542,26 +560,14 @@ public class DoubleLinkedList_repOK1 extends TestJPF {
 	public void test_repOK26() throws Exception {
 		DoubleLinkedList obj = new DoubleLinkedList();
 		obj.header = new Entry();
-		Entry next_2 = new Entry();
-		Entry previous_3 = new Entry();
-		Entry previous_9 = null;
+		Entry next_2 = null;
 		obj.modCount = 0;
-		obj.size = 0;
 		Object element_1 = null;
-		Object element_7 = null;
-		Entry next_8 = null;
-		Object element_28 = null;
-		Entry next_29 = null;
-		Entry previous_30 = null;
+		obj.size = 0;
+		Entry previous_3 = null;
 		obj.header.element = element_1;
 		obj.header.next = next_2;
 		obj.header.previous = previous_3;
-		next_2.element = element_7;
-		next_2.next = next_8;
-		next_2.previous = previous_9;
-		previous_3.element = element_28;
-		previous_3.next = next_29;
-		previous_3.previous = previous_30;
 		obj.repOK();
 	}
 
@@ -571,18 +577,15 @@ public class DoubleLinkedList_repOK1 extends TestJPF {
 		obj.header = new Entry();
 		Entry next_2 = new Entry();
 		Entry previous_3 = new Entry();
-		Entry previous_9 = new Entry();
-		obj.modCount = 0;
-		obj.size = 0;
-		Object element_1 = null;
+		Entry previous_9 = obj.header;
+		Entry next_8 = obj.header;
 		Object element_7 = null;
-		Entry next_8 = null;
-		Object element_28 = null;
 		Entry next_29 = null;
 		Entry previous_30 = null;
-		Object element_40 = null;
-		Entry next_41 = null;
-		Entry previous_42 = null;
+		obj.modCount = 0;
+		Object element_1 = null;
+		obj.size = 0;
+		Object element_28 = null;
 		obj.header.element = element_1;
 		obj.header.next = next_2;
 		obj.header.previous = previous_3;
@@ -592,9 +595,6 @@ public class DoubleLinkedList_repOK1 extends TestJPF {
 		previous_3.element = element_28;
 		previous_3.next = next_29;
 		previous_3.previous = previous_30;
-		previous_9.element = element_40;
-		previous_9.next = next_41;
-		previous_9.previous = previous_42;
 		obj.repOK();
 	}
 

@@ -10,20 +10,6 @@ public class MyLinkedList_insert1 extends TestJPF {
 	public void test_insert1() throws Exception {
 		MyLinkedList obj = new MyLinkedList();
 		obj._header = new MyListNode();
-		MyListNode next = null;
-		MyLinkedListItr p = null;
-		Object x = null;
-		obj._maxsize = 0;
-		Object element = null;
-		obj._header._element = element;
-		obj._header._next = next;
-		obj.insert(x,p);
-	}
-
-	@Test
-	public void test_insert2() throws Exception {
-		MyLinkedList obj = new MyLinkedList();
-		obj._header = new MyListNode();
 		MyLinkedListItr p = new MyLinkedListItr();
 		MyListNode next = null;
 		MyListNode current_1 = null;
@@ -37,7 +23,7 @@ public class MyLinkedList_insert1 extends TestJPF {
 	}
 
 	@Test
-	public void test_insert3() throws Exception {
+	public void test_insert2() throws Exception {
 		MyLinkedList obj = new MyLinkedList();
 		obj._header = new MyListNode();
 		MyLinkedListItr p = new MyLinkedListItr();
@@ -53,6 +39,20 @@ public class MyLinkedList_insert1 extends TestJPF {
 		p._current = current_1;
 		current_1._element = element_2;
 		current_1._next = next_3;
+		obj.insert(x,p);
+	}
+
+	@Test
+	public void test_insert3() throws Exception {
+		MyLinkedList obj = new MyLinkedList();
+		obj._header = new MyListNode();
+		MyListNode next = null;
+		MyLinkedListItr p = null;
+		Object x = null;
+		obj._maxsize = 0;
+		Object element = null;
+		obj._header._element = element;
+		obj._header._next = next;
 		obj.insert(x,p);
 	}
 

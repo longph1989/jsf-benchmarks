@@ -11,15 +11,21 @@ public class DoubleLinkedList_addI1 extends TestJPF {
 	public void test_addI1() throws Exception {
 		DoubleLinkedList obj = new DoubleLinkedList();
 		obj.header = new Entry();
+		Entry next_2 = new Entry();
+		Entry prev_3 = next_2;
 		Entry this_header_112 = obj.header;
-		obj.size = 0;
+		obj.size = 1;
 		int index = 0;
-		Object element = null;
-		obj.modCount = 0;
 		Object ele_1 = null;
+		Object ele_8 = null;
+		obj.modCount = 0;
+		Object element = null;
 		obj.header.element = ele_1;
-		obj.header.next = obj.header;
-		obj.header.previous = this_header_112;
+		obj.header.next = next_2;
+		obj.header.previous = prev_3;
+		next_2.element = ele_8;
+		next_2.next = obj.header;
+		next_2.previous = this_header_112;
 		obj.addI(index,element);
 	}
 
@@ -33,10 +39,10 @@ public class DoubleLinkedList_addI1 extends TestJPF {
 		obj.size = 1;
 		int index = 1;
 		Entry prev_3 = prev_113;
-		Object element = null;
-		obj.modCount = 0;
 		Object ele_1 = null;
 		Object ele_130 = null;
+		obj.modCount = 0;
+		Object element = null;
 		obj.header.element = ele_1;
 		obj.header.next = next_2;
 		obj.header.previous = prev_3;
@@ -50,21 +56,15 @@ public class DoubleLinkedList_addI1 extends TestJPF {
 	public void test_addI3() throws Exception {
 		DoubleLinkedList obj = new DoubleLinkedList();
 		obj.header = new Entry();
-		Entry next_2 = new Entry();
-		Entry prev_3 = next_2;
 		Entry this_header_112 = obj.header;
-		obj.size = 1;
+		obj.size = 0;
 		int index = 0;
-		Object element = null;
-		obj.modCount = 0;
 		Object ele_1 = null;
-		Object ele_8 = null;
+		obj.modCount = 0;
+		Object element = null;
 		obj.header.element = ele_1;
-		obj.header.next = next_2;
-		obj.header.previous = prev_3;
-		next_2.element = ele_8;
-		next_2.next = obj.header;
-		next_2.previous = this_header_112;
+		obj.header.next = obj.header;
+		obj.header.previous = this_header_112;
 		obj.addI(index,element);
 	}
 
@@ -80,11 +80,11 @@ public class DoubleLinkedList_addI1 extends TestJPF {
 		obj.size = 2;
 		int index = 0;
 		Entry prev_3 = prev_114;
-		Object element = null;
-		obj.modCount = 0;
+		Object ele_144 = null;
 		Object ele_1 = null;
 		Object ele_8 = null;
-		Object ele_144 = null;
+		obj.modCount = 0;
+		Object element = null;
 		obj.header.element = ele_1;
 		obj.header.next = next_2;
 		obj.header.previous = prev_3;

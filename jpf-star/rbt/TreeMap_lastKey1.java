@@ -43,6 +43,43 @@ public class TreeMap_lastKey1 extends TestJPF {
 		TreeMap obj = new TreeMap();
 		obj.root = new Entry();
 		Entry right_4 = new Entry();
+		Entry parent_5 = null;
+		Entry parent_18 = obj.root;
+		Entry right_17 = null;
+		Entry right_300 = right_4;
+		Entry left_3 = null;
+		Entry left_16 = null;
+		boolean color_19 = false;
+		obj.size = 2;
+		int key_1 = -1;
+		int key_301 = -1;
+		boolean color_6 = true;
+		int key_302 = 0;
+		int key_14 = 0;
+		int key_299 = -1;
+		Object value_15 = null;
+		Object value_2 = null;
+		obj.modCount = 0;
+		obj.root.key = key_1;
+		obj.root.value = value_2;
+		obj.root.left = left_3;
+		obj.root.right = right_4;
+		obj.root.parent = parent_5;
+		obj.root.color = color_6;
+		right_4.key = key_14;
+		right_4.value = value_15;
+		right_4.left = left_16;
+		right_4.right = right_17;
+		right_4.parent = parent_18;
+		right_4.color = color_19;
+		obj.lastKey();
+	}
+
+	@Test
+	public void test_lastKey4() throws Exception {
+		TreeMap obj = new TreeMap();
+		obj.root = new Entry();
+		Entry right_4 = new Entry();
 		Entry left_3 = new Entry();
 		Entry parent_5 = null;
 		Entry parent_18 = obj.root;
@@ -61,10 +98,10 @@ public class TreeMap_lastKey1 extends TestJPF {
 		int key_14 = 0;
 		int key_373 = -2;
 		int key_299 = -1;
-		obj.modCount = 0;
-		Object value_2 = null;
 		Object value_15 = null;
+		obj.modCount = 0;
 		Object value_378 = null;
+		Object value_2 = null;
 		obj.root.key = key_1;
 		obj.root.value = value_2;
 		obj.root.left = left_3;
@@ -83,43 +120,6 @@ public class TreeMap_lastKey1 extends TestJPF {
 		left_3.right = right_374;
 		left_3.parent = obj.root;
 		left_3.color = color_377;
-		obj.lastKey();
-	}
-
-	@Test
-	public void test_lastKey4() throws Exception {
-		TreeMap obj = new TreeMap();
-		obj.root = new Entry();
-		Entry right_4 = new Entry();
-		Entry parent_5 = null;
-		Entry parent_18 = obj.root;
-		Entry right_17 = null;
-		Entry right_300 = right_4;
-		Entry left_3 = null;
-		Entry left_16 = null;
-		boolean color_19 = false;
-		obj.size = 2;
-		int key_1 = -1;
-		int key_301 = -1;
-		boolean color_6 = true;
-		int key_302 = 0;
-		int key_14 = 0;
-		int key_299 = -1;
-		obj.modCount = 0;
-		Object value_2 = null;
-		Object value_15 = null;
-		obj.root.key = key_1;
-		obj.root.value = value_2;
-		obj.root.left = left_3;
-		obj.root.right = right_4;
-		obj.root.parent = parent_5;
-		obj.root.color = color_6;
-		right_4.key = key_14;
-		right_4.value = value_15;
-		right_4.left = left_16;
-		right_4.right = right_17;
-		right_4.parent = parent_18;
-		right_4.color = color_19;
 		obj.lastKey();
 	}
 

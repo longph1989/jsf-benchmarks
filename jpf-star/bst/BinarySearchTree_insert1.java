@@ -9,29 +9,6 @@ public class BinarySearchTree_insert1 extends TestJPF {
 	@Test
 	public void test_insert1() throws Exception {
 		BinarySearchTree obj = new BinarySearchTree();
-		obj.root = null;
-		int x = 0;
-		obj.insert(x);
-	}
-
-	@Test
-	public void test_insert2() throws Exception {
-		BinarySearchTree obj = new BinarySearchTree();
-		obj.root = new BinaryNode();
-		BinaryNode left_2 = null;
-		BinaryNode right_3 = null;
-		int element_1 = 1;
-		int element_76 = 1;
-		int x = 0;
-		obj.root.element = element_1;
-		obj.root.left = left_2;
-		obj.root.right = right_3;
-		obj.insert(x);
-	}
-
-	@Test
-	public void test_insert3() throws Exception {
-		BinarySearchTree obj = new BinarySearchTree();
 		obj.root = new BinaryNode();
 		BinaryNode left_2 = new BinaryNode();
 		BinaryNode right_3 = null;
@@ -54,22 +31,7 @@ public class BinarySearchTree_insert1 extends TestJPF {
 	}
 
 	@Test
-	public void test_insert4() throws Exception {
-		BinarySearchTree obj = new BinarySearchTree();
-		obj.root = new BinaryNode();
-		BinaryNode right_3 = null;
-		BinaryNode left_2 = null;
-		int element_1 = -1;
-		int element_76 = -1;
-		int x = 0;
-		obj.root.element = element_1;
-		obj.root.left = left_2;
-		obj.root.right = right_3;
-		obj.insert(x);
-	}
-
-	@Test
-	public void test_insert5() throws Exception {
+	public void test_insert2() throws Exception {
 		BinarySearchTree obj = new BinarySearchTree();
 		obj.root = new BinaryNode();
 		BinaryNode right_3 = new BinaryNode();
@@ -93,7 +55,37 @@ public class BinarySearchTree_insert1 extends TestJPF {
 	}
 
 	@Test
-	public void test_insert6() throws Exception {
+	public void test_insert3() throws Exception {
+		BinarySearchTree obj = new BinarySearchTree();
+		obj.root = new BinaryNode();
+		BinaryNode right_3 = null;
+		BinaryNode left_2 = null;
+		int element_1 = -1;
+		int element_76 = -1;
+		int x = 0;
+		obj.root.element = element_1;
+		obj.root.left = left_2;
+		obj.root.right = right_3;
+		obj.insert(x);
+	}
+
+	@Test
+	public void test_insert4() throws Exception {
+		BinarySearchTree obj = new BinarySearchTree();
+		obj.root = new BinaryNode();
+		BinaryNode left_2 = null;
+		BinaryNode right_3 = null;
+		int element_1 = 1;
+		int element_76 = 1;
+		int x = 0;
+		obj.root.element = element_1;
+		obj.root.left = left_2;
+		obj.root.right = right_3;
+		obj.insert(x);
+	}
+
+	@Test
+	public void test_insert5() throws Exception {
 		BinarySearchTree obj = new BinarySearchTree();
 		obj.root = new BinaryNode();
 		BinaryNode left_2 = null;
@@ -105,6 +97,14 @@ public class BinarySearchTree_insert1 extends TestJPF {
 		obj.root.element = element_1;
 		obj.root.left = left_2;
 		obj.root.right = right_3;
+		obj.insert(x);
+	}
+
+	@Test
+	public void test_insert6() throws Exception {
+		BinarySearchTree obj = new BinarySearchTree();
+		obj.root = null;
+		int x = 0;
 		obj.insert(x);
 	}
 

@@ -9,13 +9,6 @@ public class AvlTree_printTree1 extends TestJPF {
 	@Test
 	public void test_printTree1() throws Exception {
 		AvlTree obj = new AvlTree();
-		obj.root = null;
-		obj.printTree();
-	}
-
-	@Test
-	public void test_printTree2() throws Exception {
-		AvlTree obj = new AvlTree();
 		obj.root = new AvlNode();
 		AvlNode left_2 = null;
 		AvlNode right_3 = null;
@@ -25,6 +18,13 @@ public class AvlTree_printTree1 extends TestJPF {
 		obj.root.left = left_2;
 		obj.root.right = right_3;
 		obj.root.height = height_4;
+		obj.printTree();
+	}
+
+	@Test
+	public void test_printTree2() throws Exception {
+		AvlTree obj = new AvlTree();
+		obj.root = null;
 		obj.printTree();
 	}
 

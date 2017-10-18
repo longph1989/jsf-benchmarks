@@ -11,8 +11,8 @@ public class Driver_TS_R_repOK1 extends TestJPF {
 	public void test_repOK1() throws Exception {
 		Driver_TS_R obj = new Driver_TS_R();
 		TrajectorySynthesizer trajSynth = null;
-		RouteTrack track = null;
 		Route route = null;
+		RouteTrack track = null;
 		obj.repOK(trajSynth,track,route);
 	}
 

@@ -30,8 +30,8 @@ public class StackLi_topAndPop1 extends TestJPF {
 		obj.topOfStack = new ListNode();
 		ListNode next_2 = new ListNode();
 		ListNode next_4 = null;
-		Object element_1 = null;
 		Object element_3 = null;
+		Object element_1 = null;
 		obj.topOfStack.element = element_1;
 		obj.topOfStack.next = next_2;
 		next_2.element = element_3;

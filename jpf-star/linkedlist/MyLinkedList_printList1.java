@@ -16,8 +16,8 @@ public class MyLinkedList_printList1 extends TestJPF {
 		MyListNode next = null;
 		Object element_25 = new Object();
 		Object element = element_25;
-		obj._maxsize = 0;
 		int size = 0;
+		obj._maxsize = 0;
 		obj._header._element = element;
 		obj._header._next = nextH;
 		theList._header = header;
@@ -39,8 +39,8 @@ public class MyLinkedList_printList1 extends TestJPF {
 		MyListNode next_2 = null;
 		Object element_25 = new Object();
 		Object element = element_25;
-		obj._maxsize = 0;
 		int size = 0;
+		obj._maxsize = 0;
 		obj._header._element = element;
 		obj._header._next = nextH;
 		theList._header = header;

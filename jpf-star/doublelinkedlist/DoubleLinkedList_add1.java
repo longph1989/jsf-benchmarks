@@ -13,9 +13,9 @@ public class DoubleLinkedList_add1 extends TestJPF {
 		obj.header = new Entry();
 		Entry this_header_114 = obj.header;
 		obj.size = 0;
-		Object o = null;
-		obj.modCount = 0;
 		Object ele_1 = null;
+		obj.modCount = 0;
+		Object o = null;
 		obj.header.element = ele_1;
 		obj.header.next = obj.header;
 		obj.header.previous = this_header_114;

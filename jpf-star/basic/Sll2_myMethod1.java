@@ -8,20 +8,6 @@ public class Sll2_myMethod1 extends TestJPF {
 
 	@Test
 	public void test_myMethod1() throws Exception {
-		Node_old x = null;
-		Sll2.myMethod(x);
-	}
-
-	@Test
-	public void test_myMethod2() throws Exception {
-		Node_old x = new Node_old();
-		Node_old next_1 = null;
-		x.next = next_1;
-		Sll2.myMethod(x);
-	}
-
-	@Test
-	public void test_myMethod3() throws Exception {
 		Node_old x = new Node_old();
 		Node_old next_1 = new Node_old();
 		Node_old next_2 = null;
@@ -31,7 +17,13 @@ public class Sll2_myMethod1 extends TestJPF {
 	}
 
 	@Test
-	public void test_myMethod4() throws Exception {
+	public void test_myMethod2() throws Exception {
+		Node_old x = null;
+		Sll2.myMethod(x);
+	}
+
+	@Test
+	public void test_myMethod3() throws Exception {
 		Node_old x = new Node_old();
 		Node_old next_1 = new Node_old();
 		Node_old next_2 = new Node_old();
@@ -39,6 +31,14 @@ public class Sll2_myMethod1 extends TestJPF {
 		x.next = next_1;
 		next_1.next = next_2;
 		next_2.next = next_3;
+		Sll2.myMethod(x);
+	}
+
+	@Test
+	public void test_myMethod4() throws Exception {
+		Node_old x = new Node_old();
+		Node_old next_1 = null;
+		x.next = next_1;
 		Sll2.myMethod(x);
 	}
 

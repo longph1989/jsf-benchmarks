@@ -9,13 +9,6 @@ public class AvlTree_findMax1 extends TestJPF {
 	@Test
 	public void test_findMax1() throws Exception {
 		AvlTree obj = new AvlTree();
-		obj.root = null;
-		obj.findMax();
-	}
-
-	@Test
-	public void test_findMax2() throws Exception {
-		AvlTree obj = new AvlTree();
 		obj.root = new AvlNode();
 		AvlNode right_3 = null;
 		AvlNode left_2 = null;
@@ -30,7 +23,7 @@ public class AvlTree_findMax1 extends TestJPF {
 	}
 
 	@Test
-	public void test_findMax3() throws Exception {
+	public void test_findMax2() throws Exception {
 		AvlTree obj = new AvlTree();
 		obj.root = new AvlNode();
 		AvlNode right_3 = new AvlNode();
@@ -64,31 +57,14 @@ public class AvlTree_findMax1 extends TestJPF {
 	}
 
 	@Test
-	public void test_findMax4() throws Exception {
+	public void test_findMax3() throws Exception {
 		AvlTree obj = new AvlTree();
-		obj.root = new AvlNode();
-		AvlNode left_2 = new AvlNode();
-		AvlNode right_3 = null;
-		AvlNode left_251 = null;
-		AvlNode right_250 = null;
-		int height_4 = 1;
-		int heightL_6 = 0;
-		int element_249 = 0;
-		int element_1 = 1;
-		int element_223 = 1;
-		obj.root.element = element_1;
-		obj.root.left = left_2;
-		obj.root.right = right_3;
-		obj.root.height = height_4;
-		left_2.element = element_249;
-		left_2.left = left_251;
-		left_2.right = right_250;
-		left_2.height = heightL_6;
+		obj.root = null;
 		obj.findMax();
 	}
 
 	@Test
-	public void test_findMax5() throws Exception {
+	public void test_findMax4() throws Exception {
 		AvlTree obj = new AvlTree();
 		obj.root = new AvlNode();
 		AvlNode right_3 = new AvlNode();
@@ -110,6 +86,30 @@ public class AvlTree_findMax1 extends TestJPF {
 		right_3.left = left_25;
 		right_3.right = right_26;
 		right_3.height = heightR_8;
+		obj.findMax();
+	}
+
+	@Test
+	public void test_findMax5() throws Exception {
+		AvlTree obj = new AvlTree();
+		obj.root = new AvlNode();
+		AvlNode left_2 = new AvlNode();
+		AvlNode right_3 = null;
+		AvlNode left_251 = null;
+		AvlNode right_250 = null;
+		int height_4 = 1;
+		int heightL_6 = 0;
+		int element_249 = 0;
+		int element_1 = 1;
+		int element_223 = 1;
+		obj.root.element = element_1;
+		obj.root.left = left_2;
+		obj.root.right = right_3;
+		obj.root.height = height_4;
+		left_2.element = element_249;
+		left_2.left = left_251;
+		left_2.right = right_250;
+		left_2.height = heightL_6;
 		obj.findMax();
 	}
 

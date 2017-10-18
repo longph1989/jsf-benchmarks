@@ -14,8 +14,8 @@ public class DoubleLinkedList_inList1 extends TestJPF {
 		Entry e = obj.header;
 		Entry this_header_112 = obj.header;
 		obj.size = 0;
-		obj.modCount = 0;
 		Object ele_1 = null;
+		obj.modCount = 0;
 		obj.header.element = ele_1;
 		obj.header.next = obj.header;
 		obj.header.previous = this_header_112;
@@ -29,8 +29,8 @@ public class DoubleLinkedList_inList1 extends TestJPF {
 		Entry this_header_112 = obj.header;
 		obj.size = 0;
 		Entry e = new Entry();
-		obj.modCount = 0;
 		Object ele_1 = null;
+		obj.modCount = 0;
 		obj.header.element = ele_1;
 		obj.header.next = obj.header;
 		obj.header.previous = this_header_112;
@@ -47,8 +47,8 @@ public class DoubleLinkedList_inList1 extends TestJPF {
 		Entry prev_113 = next_2;
 		obj.size = 1;
 		Entry prev_3 = prev_113;
-		obj.modCount = 0;
 		Object ele_1 = null;
+		obj.modCount = 0;
 		Object ele_127 = null;
 		obj.header.element = ele_1;
 		obj.header.next = next_2;
@@ -68,9 +68,9 @@ public class DoubleLinkedList_inList1 extends TestJPF {
 		Entry e = next_2;
 		Entry this_header_112 = obj.header;
 		obj.size = 1;
-		obj.modCount = 0;
 		Object ele_1 = null;
 		Object ele_4 = null;
+		obj.modCount = 0;
 		obj.header.element = ele_1;
 		obj.header.next = next_2;
 		obj.header.previous = prev_3;
@@ -89,9 +89,9 @@ public class DoubleLinkedList_inList1 extends TestJPF {
 		Entry this_header_112 = obj.header;
 		obj.size = 1;
 		Entry e = new Entry();
-		obj.modCount = 0;
 		Object ele_1 = null;
 		Object ele_4 = null;
+		obj.modCount = 0;
 		obj.header.element = ele_1;
 		obj.header.next = next_2;
 		obj.header.previous = prev_3;
@@ -113,10 +113,10 @@ public class DoubleLinkedList_inList1 extends TestJPF {
 		Entry prev_114 = next_5;
 		obj.size = 2;
 		Entry prev_3 = prev_114;
-		obj.modCount = 0;
 		Object ele_1 = null;
 		Object ele_4 = null;
 		Object ele_141 = null;
+		obj.modCount = 0;
 		obj.header.element = ele_1;
 		obj.header.next = next_2;
 		obj.header.previous = prev_3;

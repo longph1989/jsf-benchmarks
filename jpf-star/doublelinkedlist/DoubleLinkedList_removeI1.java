@@ -16,9 +16,9 @@ public class DoubleLinkedList_removeI1 extends TestJPF {
 		Entry this_header_112 = obj.header;
 		obj.size = 1;
 		int index = 0;
-		obj.modCount = 0;
 		Object ele_3 = null;
 		Object ele_6 = null;
+		obj.modCount = 0;
 		obj.header.element = ele_3;
 		obj.header.next = next_4;
 		obj.header.previous = prev_5;

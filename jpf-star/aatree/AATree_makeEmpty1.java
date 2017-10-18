@@ -13,8 +13,8 @@ public class AATree_makeEmpty1 extends TestJPF {
 		obj.root = obj.nullNode;
 		int d_318 = 0;
 		int a_319 = 0;
-		obj.deletedNode = null;
 		obj.lastNode = null;
+		obj.deletedNode = null;
 		obj.makeEmpty();
 	}
 
